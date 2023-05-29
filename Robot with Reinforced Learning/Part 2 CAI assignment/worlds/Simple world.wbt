@@ -1,0 +1,52 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/mobsya/thymio/protos/Thymio2.proto"
+
+WorldInfo {
+  contactProperties [
+    ContactProperties {
+      material2 "thymio body"
+      coulombFriction [
+        0.7
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.5159679251599131 -0.5079993835115559 -0.6897200349113062 4.334665440790071
+  position -0.026686024847995808 -1.4972068930089641 4.652420041433456
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 0
+  floorSize 2 2
+  floorTileSize 2 2
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "Multi Resource.png"
+      ]
+    }
+  }
+}
+Thymio2 {
+  hidden position_0_0 7.056954249018634
+  hidden position_0_1 6.8969567230267295
+  hidden linearVelocity_0 -0.005501698962607146 0.04872420453698457 5.514704329808858e-05
+  hidden angularVelocity_0 0.0046721030072968996 0.00021650047671590048 0.1648923027935954
+  hidden rotation_1 -0.6777088961374795 -0.6777089193328057 -0.28534413039850554 3.697507571859006
+  hidden linearVelocity_1 -0.0017585929259856063 0.05713792570826442 -6.0926889306771086e-05
+  hidden angularVelocity_1 -6.992309684186755 -0.20531491919950637 0.16488977301240437
+  hidden rotation_2 -0.6638590015222225 -0.6638590204100809 -0.34435799267344636 3.8048721940724666
+  hidden linearVelocity_2 -0.0012635229351094916 0.04065124150584455 -5.3159402040054335e-05
+  hidden angularVelocity_2 -1.994465595325931 -0.05850660941528495 0.1648913605948927
+  translation -0.3751917652719118 0.13193157490381668 -6.736910757411396e-05
+  rotation 0.004472742574901236 -0.004318668726162489 0.9999806716503538 1.6054581060570765
+  controller "my_controller"
+}
